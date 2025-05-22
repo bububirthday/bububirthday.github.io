@@ -9,7 +9,7 @@ $(document).ready(function () {
     });
 
     $("#glow").remove();
-    txt.hide().html("Happy Birthday my beautiful Bubu").delay(750).fadeIn(300);
+    txt.hide().html("Happy Birthday my beautiful Bubu1").delay(750).fadeIn(300);
     $("#candle").animate({ opacity: ".5" }, 100);
 
     // Show images
