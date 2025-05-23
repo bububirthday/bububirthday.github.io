@@ -19,7 +19,25 @@ body {
     text-shadow: 0 0 20px black;
     opacity: 0.8;
   }
-  
+  #centerpiece {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    position: relative;
+  }
+  #gift-link {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  #gift-box {
+    width: 90px;
+    transition: transform 0.3s ease;
+  }
+  #gift-box:hover {
+    transform: scale(1.15) rotate(-5deg);
+  }
   #glow {
     position: absolute;
     left: calc(50% - .1em);
