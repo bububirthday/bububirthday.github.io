@@ -22,14 +22,13 @@ body {
   #centerpiece {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 40px;
-    margin-top: 30px;
-    position: relative;
+    margin-top: 50px;
   }
   #gift-link {
+    display: inline-block;
     cursor: pointer;
-    transition: transform 0.3s ease;
   }
   #gift-box {
     width: 90px;
