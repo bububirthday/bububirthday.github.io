@@ -131,7 +131,21 @@ body {
     text-align: center;
     animation: rise 2s ease-out;
   }
-
+  @keyframes glowIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+        text-shadow: none;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
   @keyframes twinkle {
     0% { 
         opacity: 0;
@@ -277,11 +291,16 @@ body {
   .star {
     position: absolute;
     font-size: 2.5rem;
-    color: transparent;
-    text-shadow: 0 0 6px gold, 0 0 12px gold, 0 0 20px white;
+    color: #ffcc00; /* warm golden yellow */
+    font-weight: bold;
     font-family: 'Georgia', serif;
     opacity: 0;
-    animation: twinkle 0.8s ease-in-out forwards;
+    animation: glowIn 1s ease-in-out forwards;
+    text-shadow:
+        0 0 5px #ffcc00,
+        0 0 10px #ffcc00,
+        0 0 20px #ffcc00,
+        0 0 30px #ffd700;
   }
 
   .star-letter {
