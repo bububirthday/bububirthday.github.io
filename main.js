@@ -54,7 +54,7 @@ $(document).ready(function () {
 
     setTimeout(() => {
       $("#star-message").fadeIn();
-      $(".star-letter").each(function (i) {
+      $(".star").each(function (i) {
         $(this).delay(i * 200).queue(function (next) {
           $(this).css("opacity", 1);
           next();
