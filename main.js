@@ -61,5 +61,10 @@ $(document).ready(function () {
         });
       });
     }, 2500);
+
+    setTimeout(() => {
+      $("#surprise-link").fadeIn(1000);
+    }, 3200);
+
   });
 });

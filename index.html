@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <title>Khofash's Birthday</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-    <link rel="icon" href="Fly Bats logo.png">
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khofash's Birthday</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Fly Bats logo.png" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
-<body>
-    <h1>
-      Blow the candle</h1>
-     <div class="glow" id="glow"></div>
-     <a id="candle-link" href="https://sodagift.com/ko/welcome/gift-links/1828790?t=8cXItcMKDSftIs3tFl50" target="_blank">
-        <div id="candle">
-            <div class="stripe"></div>
-            <div class="stripe"></div>
-            <div class="stripe"></div>
-            <div class="stripe"></div>
-            <div class="stripe"></div>
-            <div id="top">
-                <div class="smoke"></div>
-                <div class="smoke"></div>
-                <div class="smoke"></div>
-                <div id="knot"></div>
-                <div class="burn" id="flame"></div>
-            </div>
-        </div>
-    </a>
 
-     <div id="star-message" style="display: none; position: relative; height: 100px; margin-top: 50px;">
-         <span class="star" style="left: 10%;">I</span>
-         <span class="star" style="left: 20%;">L</span>
-         <span class="star" style="left: 30%;">O</span>
-         <span class="star" style="left: 40%;">V</span>
-         <span class="star" style="left: 50%;">E</span>
-         <span class="star" style="left: 65%;">Y</span>
-         <span class="star" style="left: 75%;">O</span>
-         <span class="star" style="left: 85%;">U</span>
-     </div>
+<body>
+  <h1>Blow the candle</h1>
+
+  <div class="glow" id="glow"></div>
+
+  <div id="candle">
+    <div class="stripe"></div>
+    <div class="stripe"></div>
+    <div class="stripe"></div>
+    <div class="stripe"></div>
+    <div class="stripe"></div>
+    <div id="top">
+      <div class="smoke"></div>
+      <div class="smoke"></div>
+      <div class="smoke"></div>
+      <div id="knot"></div>
+      <div class="burn" id="flame"></div>
+    </div>
+  </div>
+
+  <!-- Glowing "I LOVE YOU" -->
+  <div id="star-message" style="display: none; position: relative; height: 100px; margin-top: 50px;">
+    <span class="star" style="left: 10%;">I</span>
+    <span class="star" style="left: 20%;">L</span>
+    <span class="star" style="left: 30%;">O</span>
+    <span class="star" style="left: 40%;">V</span>
+    <span class="star" style="left: 50%;">E</span>
+    <span class="star" style="left: 65%;">Y</span>
+    <span class="star" style="left: 75%;">O</span>
+    <span class="star" style="left: 85%;">U</span>
+  </div>
+
+  <!-- 🎁 Hidden surprise link -->
+  <div id="surprise-link" style="display: none; text-align: center; margin-top: 40px;">
+    <a href="https://sodagift.com/ko/welcome/gift-links/1828790?t=8cXItcMKDSftIs3tFl50" target="_blank" style="color: #ffd700; font-size: 1.5rem; text-decoration: none;">
+      🎁 Click here for your surprise!
+    </a>
+  </div>
 </body>
 </html>
