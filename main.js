@@ -51,5 +51,15 @@ $(document).ready(function () {
         origin: { y: 0 },
       });
     }, 1700);
+
+    setTimeout(() => {
+      $("#star-message").fadeIn();
+      $(".star").each(function (i) {
+        $(this).delay(i * 200).queue(function (next) {
+          $(this).css("opacity", 1);
+          next();
+        });
+      });
+    }, 2500);
   });
 });

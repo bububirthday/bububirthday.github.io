@@ -124,6 +124,28 @@ body {
   #top #flame:hover::after {
     background-color: red;
   }
+  #star-message {
+    position: relative;
+    height: 150px;
+    margin-top: 40px;
+    text-align: center;
+    animation: rise 2s ease-out;
+  }
+
+  .star {
+    position: absolute;
+    font-size: 2.5rem;
+    color: gold;
+    opacity: 0;
+    animation: twinkle 1s ease-in-out forwards;
+    font-family: 'Georgia', serif;
+  }
+
+  @keyframes twinkle {
+    0% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 1; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1); }
+  }
   
   @keyframes glow {
     0% {
